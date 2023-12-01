@@ -12,6 +12,60 @@
     }
 }
 
+
+.bannerSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+/*     @media screen and (max-width:540px){
+       display: none;
+    } */
+}
+
+.bannerPenguin{
+    max-width: 20%;
+    border-radius: 51%;
+}
+.bannerPenguin01{
+    max-width: 10%;
+    border-radius: 50%;
+    animation: banner02 10s infinite linear;
+}
+
+
+
+.logoPenguin{
+    max-width: 76px;
+    @media screen and (max-width:540px){
+      display: none;
+     }
+     border-radius: 30%;
+     object-fit: cover;
+}
+
+
+
+
+
+
+@keyframes banner02 {
+    0%   { opacity: 20%;}
+    20%  { opacity: 60%; }
+    40%  { opacity: 100%; }
+    60%  {opacity: 60%; }
+    80%  {opacity: 20%; }
+  }
+
+.bannerPenguin02{
+    max-width: 10%;
+    border-radius: 50%;
+    animation: banner02 10s infinite linear;
+}
+
+
+
+
 .headerContenedor02{
     h1{
         margin-left: 17%;
@@ -36,7 +90,7 @@
   }
   body{
 
-    animation: color 9s infinite linear;
+    animation: color 5s infinite linear;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -96,11 +150,7 @@ html{
     max-height: 50%;
     padding-top: 1%;
 }
-.logo01{
-    max-width:100%;
-    max-height:100%;
 
-}
 
 .navMenu {
     max-width:100%;
@@ -128,21 +178,65 @@ html{
    }
    
    .imagenFooter{
-       max-height: 25%;
-       margin-left: auto;
+    transform: scaleX(-1);
+    @media screen and (max-width:540px){
+        display: none;
+     }
    }
    .imagenFooter02{
-       max-height: 25%;
-       margin-right: 19%;
+    @media screen and (max-width:540px){
+        display: none;
+     }
    }
 
+
    .textoFooter{
-    color: rgb(151, 146, 146); 
     font-size: 32px;
     @media screen and (max-width:576px){
         font-size: 12px;
     }
+    color: #77A1D3;
+    animation: banner02 1s infinite linear;
+}
+
+    .navbar-expand-lg{
+
+        @media screen and (max-width:576px){
+        /*     transform: scale(1.2); */
+    
+        }
     }
+    .navbar-toggler{
+        @media screen and (max-width:576px){
+            transform: scale(1.2);
+            margin-right: 45%;
+            border: solid #77A1D3;
+            background-color: #078dd5;
+        }
+    }
+
+   .textoHeader{
+    font-size: 20px;
+    font-style: italic;
+    @media screen and (max-width:801px){
+        font-size: 12px;
+    }
+    @media screen and (max-width:300px){
+       display: none;
+    }
+    color: #77A1D3;
+    animation: banner02 2s infinite linear;
+    }
+
+    .footerPenguin{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+
     .liHome{
         display: flex;
     }
@@ -168,6 +262,7 @@ html{
     }
     .porQuePinguinosTitulo{
         margin-top: 5%;
+        margin-bottom: 10%;
     margin-left: 30%;
     font-size: 40px;
     color: rgb(151, 146, 146);
@@ -196,7 +291,8 @@ html{
     }
     
     .robertElPinguino{
-        width: 30%;
+        max-width: 30%;
+        max-height: 300px;
     }
     
     .fundador{
@@ -206,11 +302,7 @@ html{
     .textoFundador{
         margin-right: 5%;
     }
-    .fotoFundador{
-        width: 30%;
-        height: 50%;
-        margin-right: 30%;
-    }
+  
              
              
     .btn-grad {
@@ -250,3 +342,71 @@ html{
     border-radius: 10px;
     display: block;
   }
+
+  .formHome01{
+    @media screen and (max-width:1057px){
+        max-width: 70%;
+     }
+    @media screen and (max-width:300px){
+        max-width: 100%;
+     }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:dotted;
+    border-radius: 10%;
+    border-color:#77A1D3 ;
+    max-width: 25%;
+    padding: 10px
+
+    
+  }
+
+  .inputHome01{
+    border-radius: 25%;
+
+  }
+
+  .imageHome01{
+    border-radius: 50%;
+    max-width: 50%;
+
+  }
+
+.seccionHome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.seccionContactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seccionPorquePinguinos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.seccionQuienesSomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.fotoFundador{
+    width: 30%;
+    height: 50%;
+    @media screen and (max-width:560px){
+        width: 50%;
+        height: 50%;
+    }
+}
